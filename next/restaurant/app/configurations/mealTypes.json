@@ -1,0 +1,20 @@
+{
+    "types": [
+        {
+            "id": "Plate",
+            "value": "صحن"
+        },
+        {
+            "id": "NormalMeal",
+            "value": "وجبة"
+        },
+        {
+            "id": "Dinner",
+            "value": "عشاء"
+        },
+        {
+            "id": "BreakFast",
+            "value": "فطور"
+        }
+    ]
+}

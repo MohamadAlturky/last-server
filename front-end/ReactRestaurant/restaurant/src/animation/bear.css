@@ -1,0 +1,15 @@
+.animated-message {
+    position: relative;
+    width: 20px;
+    cursor: pointer;
+}
+
+.bear {
+    position: absolute;
+}
+
+.bubble {
+    position: absolute;
+    top: -30px;
+    right: -110px;
+}

@@ -1,0 +1,43 @@
+.week-header {
+    width: 189px;
+    height: 41px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #FBEBDC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.table-container-for-meals-entries {
+    border-radius: 5px;
+    background: #ECECEC;
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.15);
+    padding: 50px;
+    margin-bottom: 20px;
+}
+
+.no-meal-found {
+    background: #B9CF8F;
+    width: 70%;
+    min-height: 100%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    opacity: 0.5;
+    padding: 3px;
+}
+
+.meal-found-here {
+    min-width: 100%;
+    min-height: 100%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 3px;
+}

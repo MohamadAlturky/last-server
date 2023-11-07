@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Font';
+    src: url('../../fonts/JannaLTRegular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.z-ind {
+    z-index: 100000 !important;
+}
+
+* {
+    font-family: "Font" !important;
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
+.top-nav-container {
+    height: 100px;
+}
+
+.nav-color {
+    background-color: #666;
+}
+
+.item {
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin-left: 16px;
+}
+
+.item .nav-link {
+    font-family: Janna LT;
+    color: #FFF !important;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+
+.item:hover {
+    transform: scale(110%);
+}
+
+.nav-link:hover {
+    color: #E4801E !important;
+}
+
+
+
+@media screen and (max-width: 1023px) {
+    .large-content {
+        /* background-color: #E4801E; */
+        display: none !important;
+    }
+
+    .navbar-toggler {
+        display: flex !important;
+    }
+
+
+}
+
+.large-content {
+    display: flex;
+}
+
+/* @media screen and (max-width: 360px) {
+
+    .navbar-toggler {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+} */
+
+.navbar-toggler {
+    display: none;
+}
+
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.offcanvas-title {
+    width: 100%;
+}
+
+@media screen and (max-width: 1023px) {
+    .fixed-top {
+        position: relative !important;
+    }
+}

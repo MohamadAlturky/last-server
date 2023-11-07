@@ -1,0 +1,208 @@
+.create-meal-label {
+    color: #000;
+    text-align: center;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 15px;
+    margin-top: 60px;
+}
+
+.create-meal-input {
+    width: 400px;
+    min-height: 45px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    padding-right: 40px;
+    padding-left: 10px;
+    border: 1px solid #BDBDBD;
+}
+
+
+.create-meal-form {
+    width: 530px;
+    /* min-height: 550px; */
+    flex-shrink: 0;
+    border-radius: 8px 8px 8px 8px;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    transition: all 0.5s;
+    padding-bottom: 70px;
+    border-radius: 8px;
+    /* transform: rotate(-2deg); */
+    box-shadow: -7px 7px 9px 0px rgba(0, 0, 0, 0.10);
+}
+
+
+.create-meal-input::placeholder {
+    /* color: #909090; */
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    float: right;
+    /* z-index: -50 !important; */
+    margin-bottom: 3px;
+    /*        ///////******************************************************************** */
+}
+
+.input-container-on-meal-form {
+    position: relative;
+    margin-bottom: 20px;
+    width: 400px;
+}
+
+
+.submit-create-meal {
+    display: flex;
+    width: 400px;
+    height: 45px;
+    padding: 4px 20px;
+    justify-content: center;
+    flex-shrink: 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    background: #E4801E;
+    box-shadow: -2px 2px 3px 0px rgba(0, 0, 0, 0.10);
+}
+
+.submit-create-meal:focus {
+    outline: white;
+}
+
+.submit-create-meal p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    /* width: 120px; */
+    height: 35px;
+    flex-direction: column;
+    justify-content: center;
+    /* flex-shrink: 0; */
+    user-select: none;
+}
+
+
+
+input::placeholder {
+    transition: all 0.3s;
+}
+
+input:focus::placeholder {
+    font-size: 0px;
+}
+
+
+
+/* hide the up down in number */
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.meal-description:focus {
+    box-shadow: none;
+    border: 2px black solid;
+}
+
+
+
+.meal-description {
+    padding-right: 40px;
+}
+
+textarea::placeholder {
+    transition: all 0.3s;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    float: right;
+    z-index: -50 !important;
+    margin-bottom: 3px;
+}
+
+textarea:focus::placeholder {
+    font-size: 0px;
+}
+
+.select-meal-type:focus {
+    box-shadow: none;
+    border: 2px black solid;
+}
+
+option:checked {
+    background: #E4801E;
+    color: white;
+}
+
+
+.form-file:focus {
+    box-shadow: none;
+    border: 2px black solid;
+}
+
+.file-label {
+    cursor: pointer;
+}
+
+.file-image {
+    width: 70px;
+    height: 70px;
+}
+
+@media screen and (max-width: 1207px) {
+    .create-meal-form {
+        transform: scale(90%);
+        margin-top: -10px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .create-meal-form {
+        transform: scale(80%);
+        margin-top: -30px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .create-meal-form {
+        transform: scale(70%);
+        margin-top: -60px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .create-meal-form {
+        transform: scale(60%);
+        margin-top: -120px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .create-meal-form {
+        transform: scale(50%);
+        margin-top: -190px;
+    }
+}
+
+.first-transformer {
+    background: url('../../images/login.png'), lightgray 50% / cover no-repeat;
+    /* background: url('../../images/backgroundForCard.jpg'), lightgray 50% / cover no-repeat; */
+    background-size: cover;
+    transform: rotateZ(15deg)translateX(-180px)translateY(-150px);
+}

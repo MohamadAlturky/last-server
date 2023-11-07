@@ -1,0 +1,45 @@
+.pricing-transformer {
+    background: url('../../images/login.png'), lightgray 50% / cover no-repeat;
+    transform: rotateZ(-30deg)translateX(150px)translateY(-20px);
+}
+
+.scale-sider {
+    transform: scale(80%);
+    z-index: -100;
+}
+
+.edit-pricing-form {
+    width: 530px;
+    /* max-height: 400px; */
+    flex-shrink: 0;
+    border-radius: 8px 8px 8px 8px;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    transition: all 0.5s;
+    padding-bottom: 70px;
+    border-radius: 8px;
+    /* transform: rotate(-2deg); */
+    box-shadow: -7px 7px 9px 0px rgba(0, 0, 0, 0.10);
+}
+
+
+@media screen and (max-width: 550px) {
+    .edit-pricing-form {
+        transform: scale(80%);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .edit-pricing-form {
+        transform: scale(60%);
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .edit-pricing-form {
+        transform: scale(50%);
+    }
+}

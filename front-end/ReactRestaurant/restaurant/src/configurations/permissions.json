@@ -1,0 +1,13 @@
+{
+    "permissions": {
+        "CreateSystemInformation": "CreateSystemInformation",
+        "ReadSystemInformation": "ReadSystemInformation",
+        "RegisterCustomer": "RegisterCustomer",
+        "ReadContent": "ReadContent",
+        "OrderContent": "OrderContent",
+        "ConsumeReservations": "ConsumeReservations",
+        "EditBalances": "EditBalances",
+        "NoPermissionNeeded": "NoPermissionNeeded",
+        "SeePublicContent": "SeePublicContent"
+    }
+}

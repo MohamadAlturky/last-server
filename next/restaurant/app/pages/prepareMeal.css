@@ -1,0 +1,36 @@
+.message-for-meal-entries {
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+
+.add-meal {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    max-width: 180px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 40px;
+    font-size: large;
+    font-weight: bolder;
+    /* border: 1px solid #e4811eae; */
+    border-radius: 10px;
+    user-select: none;
+    cursor: pointer;
+    /* background-color: #E4801E; */
+    color: black;
+    margin: 10px;
+    display: flex;
+    justify-content: end;
+    transition: all 0.5s;
+}
+
+.add-stuff {
+    color: white !important;
+    margin-left: 15px;
+}
+
+.add-meal:hover {
+    transform: scale(115%);
+}

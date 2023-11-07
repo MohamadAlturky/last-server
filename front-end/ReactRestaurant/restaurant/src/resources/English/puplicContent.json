@@ -1,0 +1,12 @@
+{
+    "logIn": {
+        "cardTitle": "Log In",
+        "welcome": "welcome",
+        "logInFromHere": "You can log in from here",
+        "serialNumber": "Serial number",
+        "password": "Password",
+        "rememberMe": "Remember me",
+        "didYouForgetPassword": "Did you forget your password?",
+        "LogInButton": "Log In"
+    }
+}

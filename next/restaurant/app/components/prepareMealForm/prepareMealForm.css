@@ -1,0 +1,122 @@
+/* .auto-complete-prepare-meal-item {
+    cursor: pointer;
+    width: 360px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    /* background-color: aqua; 
+}*/
+
+/*
+.auto-complete-prepare-meal {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    /* padding-top: 30px; */
+/*align-items: center;
+width: 100%;
+background-color: white;
+border-radius: 9px;
+top: 50px;
+z-index: 3;
+border: 1px black solid;
+box-shadow: -7px 7px 9px 0px rgba(0, 0, 0, 0.10);
+}
+
+
+
+*/
+
+.auto-complete {
+    position: absolute;
+    top: 50px;
+    background-color: white;
+    z-index: 10;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    border-radius: 9px;
+    top: 50px;
+    z-index: 3;
+    border: 1px rgb(212, 212, 212) solid;
+    box-shadow: -7px 7px 9px 0px rgba(0, 0, 0, 0.10);
+}
+
+
+.auto-complete-prepare-meal-item {
+    cursor: pointer;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    transition: all 0.4s;
+}
+
+.auto-complete-prepare-meal-item:hover {
+    background-color: #E4801E;
+    /* border: 1px rgb(212, 212, 212) solid; */
+    color: white;
+    /* font-weight: bold; */
+    border-radius: 5px;
+}
+
+
+
+.cancel {
+    margin-bottom: 5px;
+    margin-right: 20px;
+}
+
+.cancel {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff;
+    background-color: #666;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.cancel:hover {
+    background-color: #522ba7;
+}
+
+.cancel::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    opacity: 0.8;
+    transition: all 0.5s ease-out;
+}
+
+.cancel:hover::before {
+    transform: translate(-50%, -50%) scale(20);
+    opacity: 0;
+}
+
+.cancel:hover {
+    color: #ffffff;
+}
+
+.smaller {
+    font-size: 15px;
+}

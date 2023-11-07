@@ -1,0 +1,6 @@
+.customer-name {
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    font-weight: bold;
+}

@@ -1,0 +1,12 @@
+/home/ubuntu/server-work-space/back-end/AspDotNetRestaurant/SharedKernal/bin/Debug/net6.0/SharedKernal.deps.json
+/home/ubuntu/server-work-space/back-end/AspDotNetRestaurant/SharedKernal/bin/Debug/net6.0/SharedKernal.dll
+/home/ubuntu/server-work-space/back-end/AspDotNetRestaurant/SharedKernal/bin/Debug/net6.0/SharedKernal.pdb
+/home/ubuntu/server-work-space/back-end/AspDotNetRestaurant/SharedKernal/obj/Debug/net6.0/SharedKernal.csproj.AssemblyReference.cache
+/home/ubuntu/server-work-space/back-end/AspDotNetRestaurant/SharedKernal/obj/Debug/net6.0/SharedKernal.GeneratedMSBuildEditorConfig.editorconfig
+/home/ubuntu/server-work-space/back-end/AspDotNetRestaurant/SharedKernal/obj/Debug/net6.0/SharedKernal.AssemblyInfoInputs.cache
+/home/ubuntu/server-work-space/back-end/AspDotNetRestaurant/SharedKernal/obj/Debug/net6.0/SharedKernal.AssemblyInfo.cs
+/home/ubuntu/server-work-space/back-end/AspDotNetRestaurant/SharedKernal/obj/Debug/net6.0/SharedKernal.csproj.CoreCompileInputs.cache
+/home/ubuntu/server-work-space/back-end/AspDotNetRestaurant/SharedKernal/obj/Debug/net6.0/SharedKernal.dll
+/home/ubuntu/server-work-space/back-end/AspDotNetRestaurant/SharedKernal/obj/Debug/net6.0/refint/SharedKernal.dll
+/home/ubuntu/server-work-space/back-end/AspDotNetRestaurant/SharedKernal/obj/Debug/net6.0/SharedKernal.pdb
+/home/ubuntu/server-work-space/back-end/AspDotNetRestaurant/SharedKernal/obj/Debug/net6.0/ref/SharedKernal.dll

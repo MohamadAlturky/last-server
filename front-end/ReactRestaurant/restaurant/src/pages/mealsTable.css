@@ -1,0 +1,142 @@
+.img-in-table {
+    width: 120px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.header-table-title {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.scale-smaller {
+    transform: scale(90%);
+}
+
+.delete-color {
+    background: #dc3545 !important;
+}
+
+.delete-color:hover {
+    color: #fff !important;
+}
+
+.update-color {
+    background: #5BA50E !important;
+}
+
+.update-color:hover {
+    color: #fff !important;
+}
+
+/* 
+.button-for-create {
+    padding: 10px 25px;
+letter-spacing: 2.5px;
+font-weight: 500;
+color: #000;
+background-color: #fff;
+border: none;
+border-radius: 45px;
+box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+transition: all 0.3s ease 0s;
+cursor: pointer;
+outline: none;
+user-select: none;
+}
+
+.button-for-create:hover {
+    background-color: #3b82f6;
+    box-shadow: 0px 15px 20px #3b83f651;
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.button-for-create:active {
+    transform: translateY(-1px);
+}
+
+*/
+
+.button-for-create {
+    width: 220px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    z-index: 9;
+    border: 1px solid #5BA50E;
+    gap: 10px;
+    text-decoration: none;
+    background-color: #5BA50E;
+}
+
+.button-for-create::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 0 0, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 0 0, 0 100%);
+    z-index: -1;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.button-for-create span {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.button-for-create:hover::after {
+    animation: sideClip 0.5s linear;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    opacity: 1;
+}
+
+.button-for-create:hover span {
+    animation: storm 0.4s linear both;
+    color: #5BA50E;
+}
+
+@keyframes sideClip {
+    0% {
+        clip-path: polygon(0 0, 100% 0, 0 0, 0 100%);
+    }
+
+    50% {
+        clip-path: polygon(0 0, 100% 0, 0 100%, 0 100%);
+    }
+
+    100% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+@keyframes storm {
+    0% {
+        transform: translate3d(0, 0, 0) translateZ(0);
+    }
+
+    25% {
+        transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+
+    50% {
+        transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+
+    75% {
+        transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0) translateZ(0);
+    }
+}

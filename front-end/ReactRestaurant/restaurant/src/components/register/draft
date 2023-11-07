@@ -1,0 +1,235 @@
+import { useState } from "react";
+import Sider from "../createMeal/Sider";
+import "./register.css";
+import data from "../../configurations/roles.json";
+function Register() {
+  const [customerType, setCustomerType] = useState<string>("");
+  const [selectedRoles, setSelectedRoles] = useState<string[]>(["2"]);
+  const [role, setRole] = useState<string>("2");
+  const [firstName, setFirstName] = useState<string>("");
+  const [lastName, setLastName] = useState<string>("");
+  const [description, setDescription] = useState<string>("");
+  const [serialNumber, setSerialNumber] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
+  const [confirmPassword, setConfirmPassword] = useState<string>("");
+
+  console.log("////////////////////");
+  console.log("firstName = " + firstName);
+  console.log("lastName = " + lastName);
+  console.log("description = " + description);
+  console.log("serialNumber = " + serialNumber);
+  console.log("password = " + password);
+  console.log("confirmPassword =" + confirmPassword);
+  console.log("role = " + role);
+  console.log("selectedRoles = " + selectedRoles);
+  console.log("customerType = " + customerType);
+
+  console.log("////////////////////");
+
+  const handleCustomerChange = (
+    event: React.ChangeEvent<HTMLSelectElement>
+  ) => {
+    setCustomerType(event.target.value);
+  };
+  // const handleRolesSelection = (
+  //   event: React.ChangeEvent<HTMLSelectElement>
+  // ) => {
+  //   if (!selectedRoles.includes(event.target.value)) {
+  //     setSelectedRoles((previuos) => previuos.concat(event.target.value));
+  //   }
+  //   setRole(event.target.value);
+  // };
+  // const handleDispose = (roleToRemove: string) => {
+  //   setSelectedRoles((prevList) => {
+  //     if (role == roleToRemove) {
+  //       let newList = prevList.filter((role) => role != roleToRemove);
+  //       setRole(newList[newList.length - 1]);
+  //     }
+  //     return prevList.filter((role) => role != roleToRemove);
+  //   });
+  // };
+  const handleFirstNameChange = (
+    event: React.ChangeEvent<HTMLInputElement>
+  ) => {
+    setFirstName(event.target.value);
+  };
+  const handlePasswordChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setPassword(event.target.value);
+  };
+  // const handleConfirmPasswordChange = (
+  //   event: React.ChangeEvent<HTMLInputElement>
+  // ) => {
+  //   setConfirmPassword(event.target.value);
+  // };
+  const handleSerialNumberChange = (
+    event: React.ChangeEvent<HTMLInputElement>
+  ) => {
+    setSerialNumber(event.target.value);
+  };
+  const handleLastNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setLastName(event.target.value);
+  };
+  const handleDescriptionChange = (
+    event: React.ChangeEvent<HTMLTextAreaElement>
+  ) => {
+    setDescription(event.target.value);
+  };
+
+  return (
+    <div className="container">
+      <div className="d-flex justify-content-center mt-5">
+        {/* <Sider transformer="register-transformer"></Sider> */}
+        {/* onSubmit={handleSubmit} */}
+        {/* <form className="form"> */}
+        <form className="create-meal-form">
+          <div className="create-meal-label">تسجيل مستخدم جديد</div>
+          <div className="input-container-on-meal-form">
+            <div className="input-container-on-meal-form d-flex justify-content-center role-title">
+              المعلومات الشخصية
+            </div>
+            <input
+              className="create-meal-input"
+              type="text"
+              placeholder="اسم المستخدم"
+              dir="rtl"
+              onChange={handleFirstNameChange}
+            />
+            <div className="input-svg"></div>
+          </div>
+
+          <div className="input-container-on-meal-form">
+            <input
+              className="create-meal-input"
+              type="text"
+              placeholder="الكنية"
+              dir="rtl"
+              onChange={handleLastNameChange}
+            />
+            <div className="input-svg"></div>
+          </div>
+          <div className="input-container-on-meal-form">
+            <textarea
+              className="form-control meal-description"
+              placeholder="ملاحظات"
+              rows={3}
+              dir="rtl"
+              onChange={handleDescriptionChange}
+            ></textarea>
+
+            <div className="input-svg"></div>
+          </div>
+
+          <div className="input-container-on-meal-form">
+            <select
+              value={customerType}
+              className="form-select select-meal-type"
+              aria-label="Default select example"
+              dir="rtl"
+              onChange={handleCustomerChange}
+            >
+              <option value="Visitor">زائر</option>
+              <option value="Employee">موظف</option>
+              <option value="VeryPoorPeaple">طالب متميزين</option>
+              <option value="PoorPeople">طالب دراسة عامة</option>
+              <option value="RichPeople">طالب دراسة خاصة</option>
+            </select>
+          </div>
+          <div className="input-container-on-meal-form d-flex justify-content-center role-title">
+            الأمان
+          </div>
+          <div className="input-container-on-meal-form">
+            <input
+              className="create-meal-input"
+              type="number"
+              placeholder="الرقم الذاتي"
+              dir="rtl"
+              onChange={handleSerialNumberChange}
+            />
+            <div className="input-svg"></div>
+          </div>
+          <div className="input-container-on-meal-form">
+            <input
+              className="create-meal-input"
+              type="password"
+              placeholder="كلمة المرور"
+              dir="rtl"
+              onChange={handlePasswordChange}
+            />
+          </div>
+          {/* 
+          <div className="input-container-on-meal-form">
+            <input
+              className="create-meal-input"
+              type="password"
+              placeholder="تأكيد كلمة المرور"
+              dir="rtl"
+              onChange={handleConfirmPasswordChange}
+            />
+          </div> */}
+
+          {/* <div className="input-container-on-meal-form d-flex justify-content-center role-title">
+            دور المستخدم في النظام
+          </div>
+
+          <div className="input-container-on-meal-form">
+            <select
+              className="form-select select-meal-type"
+              aria-label="Default select example"
+              dir="rtl"
+              value={role}
+              onChange={handleRolesSelection}
+            >
+              {data.roles.map((role) => (
+                <option key={role.Id} value={role.Id}>
+                  {role.Name}
+                </option>
+              ))}
+            </select>
+          </div> */}
+          {/* {role} */}
+
+          {/* <div className="input-container-on-meal-form">
+              <div className="row">
+                {selectedRoles.map((role) => (
+                  <div className="col-4" key={role}>
+                    <div className="role-item" key={role}>
+                      <div
+                        className="dispose-role"
+                        key={role}
+                        onClick={() => handleDispose(role)}
+                      >
+                        X
+                      </div>
+                      {data.roles.find((e) => e.Id == parseInt(role))?.Name}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div> */}
+          <div className="input-container-on-meal-form">
+            <div className="col-1">
+              <div className="form-check">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  id="gridCheck"
+                />
+                <label
+                  className="form-check-label checkbox-register"
+                  htmlFor="gridCheck"
+                ></label>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" className="submit-create-meal">
+            <p>حفظ المستخدم الجديد</p>
+          </button>
+        </form>
+        {/* </form> */}
+      </div>
+    </div>
+  );
+}
+
+export default Register;

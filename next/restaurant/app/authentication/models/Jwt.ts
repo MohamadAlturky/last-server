@@ -1,0 +1,3 @@
+interface Jwt {
+  accessToken: string;
+}

@@ -1,0 +1,26 @@
+.container-for-pagination {
+    margin-top: 25px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.container-for-pagination a {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #23432b;
+    color: #23432b;
+    cursor: pointer;
+}
+
+
+.active-for-pagination a {
+    background: rgb(75, 75, 171);
+    color: white !important;
+}

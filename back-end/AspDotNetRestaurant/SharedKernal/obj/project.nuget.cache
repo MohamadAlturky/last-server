@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "0y0XzRBQXyK9/8P7iGd68RY7lEKmXQtHa6v7wG8OFRHz3w+pWw7jsSMJpozO1q9dITyjSAkzFt7ZO1EBJ01DeQ==",
+  "success": true,
+  "projectFilePath": "/home/ubuntu/server-work-space/back-end/AspDotNetRestaurant/SharedKernal/SharedKernal.csproj",
+  "expectedPackageFiles": [
+    "/home/ubuntu/.nuget/packages/mediatr/11.0.0/mediatr.11.0.0.nupkg.sha512",
+    "/home/ubuntu/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512",
+    "/home/ubuntu/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/11.0.0/mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "/home/ubuntu/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "/home/ubuntu/.nuget/packages/microsoft.netcore.app.ref/6.0.24/microsoft.netcore.app.ref.6.0.24.nupkg.sha512",
+    "/home/ubuntu/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.24/microsoft.aspnetcore.app.ref.6.0.24.nupkg.sha512"
+  ],
+  "logs": []
+}

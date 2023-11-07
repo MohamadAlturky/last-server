@@ -1,0 +1,258 @@
+{
+    "logIn": {
+        "cardTitle": "تسجيل الدخول",
+        "welcome": "أهلاً وسهلاً بك",
+        "logInFromHere": "يمكنك تسجيل الدخول من هنا",
+        "serialNumber": "الرقم الذاتي",
+        "password": "كلمة السر",
+        "rememberMe": "تذكرني",
+        "didYouForgetPassword": "هل نسيت كلمة المرور؟",
+        "LogInButton": "تسجيل الدخول"
+    },
+    "NavBar": {
+        "mainPageLink": "الصفحة الرئيسية",
+        "notesLink": "ملاحظات",
+        "notificationsLink": "تعاميم",
+        "callUs": "اتصل بنا"
+    },
+    "Weeks": [
+        {
+            "id": 4,
+            "name": "الأسبوع الخامس"
+        },
+        {
+            "id": 3,
+            "name": "الأسبوع الرابع"
+        },
+        {
+            "id": 2,
+            "name": "الأسبوع الثالث"
+        },
+        {
+            "id": 1,
+            "name": "الأسبوع الثاني"
+        },
+        {
+            "id": 0,
+            "name": "الأسبوع الأول"
+        }
+    ],
+    "DaysOfWeek": [
+        "السبت",
+        "الأحد",
+        "الاثنين",
+        "الثلاثاء",
+        "الأربعاء",
+        "الخميس",
+        "الجمعة"
+    ],
+    "styles": [
+        {
+            "id": "Reserved",
+            "style": "orange-background",
+            "message": "وجبة محجوزة"
+        },
+        {
+            "id": "Waiting",
+            "style": "blue-background",
+            "message": "وجبة محجوزة( غير مؤكدة)"
+        },
+        {
+            "id": "Consumed",
+            "style": "yallow-background",
+            "message": "وجبة مستهلكة"
+        },
+        {
+            "id": "OnTheCanceledListButNotCanceledYet",
+            "style": "red-background",
+            "message": "انتظار حتى يتم إلغائها"
+        },
+        {
+            "id": "Canceled",
+            "style": "brown-background",
+            "message": "وجبة ملغية"
+        },
+        {
+            "id": "Empty",
+            "style": "brown-background",
+            "message": "وجبة متوفرة"
+        },
+        {
+            "id": "Passed",
+            "style": "red-background",
+            "message": "وجبة فائتة"
+        }
+    ],
+    "AdminOptionsBar": [
+        {
+            "link": "/AdminServices",
+            "name": "خدمات أخرى"
+        },
+        {
+            "link": "/mealsTable",
+            "name": "جدول الوجبات"
+        },
+        {
+            "link": "/prepareMeal",
+            "name": "جدول الطعام"
+        },
+        {
+            "link": "/MealSchedule",
+            "name": "استعراض برنامج الطعام"
+        },
+        {
+            "link": "/Register",
+            "name": "تسجيل زبون"
+        }
+    ],
+    "UserOptionsBar": [
+        {
+            "link": "/userServices",
+            "name": "خدمات أخرى"
+        },
+        {
+            "link": "/changePassword",
+            "name": "تغيير كلمة المرور"
+        },
+        {
+            "link": "/AccountTransactionsPage",
+            "name": "كشف الحساب"
+        },
+        {
+            "link": "/MealSchedule",
+            "name": "استعراض برنامج الطعام"
+        },
+        {
+            "link": "/home",
+            "name": "تعديل التسجيلات"
+        },
+        {
+            "link": "/ReservationsStatus",
+            "name": "حالة التسجيل"
+        }
+    ],
+    "ConsumerOptionsBar": [
+        {
+            "link": "",
+            "name": ""
+        }
+    ],
+    "AccountantOptionsBar": [
+        {
+            "link": "",
+            "name": ""
+        }
+    ],
+    "CustomersTypes": [
+        {
+            "id": "Visitor",
+            "name": "زائر"
+        },
+        {
+            "id": "Employee",
+            "name": "موظف"
+        },
+        {
+            "id": "VeryPoorPeaple",
+            "name": "طالب متميزين"
+        },
+        {
+            "id": "PoorPeople",
+            "name": "طالب عامة"
+        },
+        {
+            "id": "RichPeople",
+            "name": "طالب خاصة"
+        }
+    ],
+    "AdminServices": [
+        {
+            "title": "🍜إضافة وجبة",
+            "link": "/createMeal",
+            "descritption": "من خلال هذه الخدمة يمكنك إضافة نوع جديد من الوجبات يقدمه النظام",
+            "colorClass": "brown-background"
+        },
+        {
+            "title": "💬إرسال إشعار ",
+            "link": "/SendMessage",
+            "descritption": "من خلال هذه الخدمة يمكنك إرسال إشعار لجميع الزبائن",
+            "colorClass": "yallow-background"
+        },
+        {
+            "title": "💰تعديل الأسعار",
+            "link": "/editPricing",
+            "descritption": "من خلال هذه الخدمة يمكنك تعديل أسعار الوجبات المقدمة بأنواعها المختلفة",
+            "colorClass": "orange-background"
+        },
+        {
+            "title": "💳تغذية رصيد زبون",
+            "link": "/IncreaseCustomerBalance",
+            "descritption": "من خلال هذه الخدمة يمكنك تغذية رصيد زبائن مطعم المعهد العالي",
+            "colorClass": "green-background"
+        },
+        {
+            "title": "📋معلومات الزبائن",
+            "link": "/FindCustomer",
+            "descritption": "من خلال هذه الخدمة يمكنك استعراض معلومات زبون معين ",
+            "colorClass": "light-blue-background"
+        },
+        {
+            "title": "عرض جميع الزبائن",
+            "link": "/CustomersTable",
+            "descritption": "من خلال هذه الخدمة يمكنك استعراض جميع الزبائن ضمن النظام ",
+            "colorClass": "customer-background"
+        }
+    ],
+    "UserServices": [
+        {
+            "title": "💰عرض الأسعار",
+            "link": "/PricingPage",
+            "descritption": "من خلال هذه الخدمة يمكنك استعراض أسعار الوجبات المقدمة الخاص بك",
+            "colorClass": "orange-background"
+        }
+    ],
+    "Transactions": [
+        {
+            "id": "Increase",
+            "name": "تم زيادة رصيد الحساب بمبلغ"
+        },
+        {
+            "id": "Decrease",
+            "name": "تم السحب من الحساب مبلغ"
+        },
+        {
+            "id": "Close",
+            "name": "تم إغلاق الحساب وسحب قيمة"
+        }
+    ],
+    "Days": [
+        {
+            "id": "Monday",
+            "name": "الاثنين"
+        },
+        {
+            "id": "Tuesday",
+            "name": "الثلاثاء"
+        },
+        {
+            "id": "Wednesday",
+            "name": "الأربعاء"
+        },
+        {
+            "id": "Thursday",
+            "name": "الخميس"
+        },
+        {
+            "id": "Friday",
+            "name": "الجمعة"
+        },
+        {
+            "id": "Saturday",
+            "name": "السبت"
+        },
+        {
+            "id": "Sunday",
+            "name": "الأحد"
+        }
+    ]
+}

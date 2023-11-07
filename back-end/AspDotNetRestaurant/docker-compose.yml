@@ -1,0 +1,36 @@
+version: '3.4'
+networks:
+  dev:
+    driver: bridge
+services:
+  backEnd:
+    depends_on:
+      - db
+    container_name: backEndServer
+    ports:
+      - "8088:80"
+    build:
+      context: .
+      dockerfile: Presentation/Dockerfile
+    image: result/latest
+    environment:
+      - ConnectionStrings__DefaultConnection=User ID=postgres;Password=postgres;Server=db;Port=5432;Database=RestaurantDB;IntegratedSecurity=true;Pooling=true;
+      - ASPNETCORE_URLS=http://+:80
+    networks:
+      - dev
+  db:
+    image: postgres:latest
+    container_name: db
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=RestaurantDB
+    ports:
+      - 5432:5432
+    restart: always
+    volumes:
+      - app_data:/var/lib/postgres/data2
+    networks:
+      - dev
+volumes:
+  app_data:

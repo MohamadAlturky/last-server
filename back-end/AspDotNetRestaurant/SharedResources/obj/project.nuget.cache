@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "wm2iebDL7/UKKWDa3Ssw+V/Ju5t/dE1kqGrvzJ0aIyFVq94XqubQsLbWd64wl08EvYKsZMRPVhox7bOAckrgIA==",
+  "success": true,
+  "projectFilePath": "/home/ubuntu/server-work-space/back-end/AspDotNetRestaurant/SharedResources/SharedResources.csproj",
+  "expectedPackageFiles": [
+    "/home/ubuntu/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "/home/ubuntu/.nuget/packages/microsoft.extensions.localization/6.0.19/microsoft.extensions.localization.6.0.19.nupkg.sha512",
+    "/home/ubuntu/.nuget/packages/microsoft.extensions.localization.abstractions/6.0.19/microsoft.extensions.localization.abstractions.6.0.19.nupkg.sha512",
+    "/home/ubuntu/.nuget/packages/microsoft.extensions.logging.abstractions/6.0.4/microsoft.extensions.logging.abstractions.6.0.4.nupkg.sha512",
+    "/home/ubuntu/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "/home/ubuntu/.nuget/packages/microsoft.extensions.primitives/6.0.0/microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "/home/ubuntu/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "/home/ubuntu/.nuget/packages/microsoft.netcore.app.ref/6.0.24/microsoft.netcore.app.ref.6.0.24.nupkg.sha512",
+    "/home/ubuntu/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.24/microsoft.aspnetcore.app.ref.6.0.24.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,67 @@
+.claim {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.submit-log-out {
+    display: flex;
+    width: 400px;
+    height: 45px;
+    padding: 4px 20px;
+    justify-content: center;
+    flex-shrink: 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    background: #DA1C24;
+    box-shadow: -2px 2px 3px 0px rgba(0, 0, 0, 0.10);
+}
+
+.submit-log-out p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    /* width: 120px; */
+    height: 35px;
+    flex-direction: column;
+    justify-content: center;
+    /* flex-shrink: 0; */
+    user-select: none;
+}
+
+.min-height-good {
+    max-height: 420px !important;
+}
+
+
+.hi2 {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
+
+.log-out {
+    position: absolute;
+    bottom: 30px;
+    left: 150px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.log-out:hover {
+    transform: scale(115%);
+}
+
+.log-title {
+    font-size: medium;
+    font-weight: 500;
+    position: absolute;
+    bottom: 60px;
+    right: 150px;
+    user-select: none;
+    color: #DA1C24;
+}

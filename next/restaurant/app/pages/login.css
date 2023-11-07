@@ -1,0 +1,33 @@
+.content {
+    border-radius: 8px;
+    background: #D9D9D9;
+    box-shadow: -7px 7px 9px 0px rgba(0, 0, 0, 0.10);
+    transition: background 0.5s;
+}
+
+
+@media screen and (max-width: 900px) {
+    .content {
+        transform: scale(80%);
+        margin-top: -110px;
+    }
+
+    .log-in-form {
+        border-radius: 8px
+    }
+
+    .sider {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .content {
+        transform: scale(50%);
+        margin-top: -220px;
+    }
+}
+
+.login-content {
+    margin-top: 150px;
+}

@@ -1,0 +1,83 @@
+.links-spacer {
+    height: 1px;
+    background: #666;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.meal-type {
+    width: 59px;
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.day-container {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: end;
+    border-bottom: 2px #E4801E solid;
+}
+
+
+.do-process {
+    cursor: pointer;
+    position: absolute;
+    color: #FFF;
+    text-align: center;
+    font-family: Janna LT;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    width: 120px;
+    height: 35px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #E4801E;
+    box-shadow: -2px 2px 3px 0px rgba(0, 0, 0, 0.10);
+    display: flex;
+    width: 150px;
+    height: 35px;
+    padding: 4px 20px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.no-meals-prepared {
+    height: 397px;
+}
+
+.red-background {
+    background-color: #666 !important;
+}
+
+
+.left-cover {
+    position: absolute;
+    background-color: #ffffff8b;
+    width: 52%;
+    left: 0;
+    height: 100%;
+    z-index: 51;
+}
+
+.right-cover {
+    position: absolute;
+    background-color: #ffffff8c;
+    width: 52%;
+    right: 0;
+    height: 100%;
+    z-index: 51;
+}

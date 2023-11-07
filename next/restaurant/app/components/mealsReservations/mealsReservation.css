@@ -1,0 +1,9 @@
+@media screen and (max-width: 1400px) {
+    .refreshable {
+        justify-content: center !important;
+    }
+
+    .do-process {
+        position: relative !important;
+    }
+}

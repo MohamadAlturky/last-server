@@ -1,0 +1,12 @@
+.background-trasparently {
+    background: transparent !important;
+}
+
+.top-nav-container-2 {
+    background: transparent !important;
+    z-index: 100;
+}
+
+.footer-up {
+    transform: translateY(-240px);
+}

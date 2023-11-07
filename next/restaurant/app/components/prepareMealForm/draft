@@ -1,0 +1,186 @@
+import { useOutletContext } from "react-router-dom";
+import { OutletContextType } from "../../authentication/models/OutletContextType";
+import mealTypes from "../../configurations/mealTypes.json";
+import { useEffect, useState } from "react";
+import { useCookies } from "react-cookie";
+import ClientContext from "../../contexts/api/ClientContext";
+import Result from "../../models/Result";
+import "./prepareMealForm.css";
+interface PrepareMealFormProps {
+  choise: string;
+  atDay: string;
+}
+
+export function PrepareMealForm(props: PrepareMealFormProps) {
+  const [numberOfMeals, setNumberOfMeals] = useState<number>(0);
+  const [mealName, setMealName] = useState<string>("");
+  const [autoComplete, setAutoComplete] = useState<
+    AutoCompleteResponse[] | null
+  >(null);
+  // const nameInput = useRef<HTMLInputElement>(null);
+  const [selectedMeal, setSelectedMeal] = useState<AutoCompleteResponse | null>(
+    null
+  );
+  const { outLetProps } = useOutletContext<OutletContextType>();
+  const [cookies] = useCookies(["jwt"]);
+  const clientContext = new ClientContext(outLetProps.error401Handler);
+
+  const handleMealNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setMealName(event.target.value);
+  };
+  const handleNumberOfMealsChange = (
+    event: React.ChangeEvent<HTMLInputElement>
+  ) => {
+    setNumberOfMeals(parseInt(event.target.value));
+  };
+
+  console.log(mealName);
+  console.log(numberOfMeals);
+
+  useEffect(() => {
+    if (mealName != "") {
+      handleAutoComplete();
+    } else {
+      setAutoComplete([]);
+    }
+  }, [mealName]);
+  const selectMeal = (meal: AutoCompleteResponse) => {
+    setAutoComplete([]);
+    setSelectedMeal(meal);
+    setMealName(meal.mealName);
+  };
+  function handleAutoComplete() {
+    // if (Number.isNaN(numberOfMeals) || mealName.length === 0) {
+    //   Swal.fire({
+    //     title: "خطأ",
+    //     text: "عذراً المعلومات المعطاة خاطئة حاول مرة أخرى",
+    //     icon: "error",
+    //     confirmButtonText: "حسناً",
+    //   });
+    // }
+    //  else if (numberOfMeals <= 0) {
+    //   Swal.fire({
+    //     title: "خطأ",
+    //     text: "عفوا العدد الطلوب تحضيره غير صالح حاول مرة أخرى",
+    //     icon: "error",
+    //     confirmButtonText: "حسناً",
+    //   });
+    // }
+    // else {
+    let formData = new FormData();
+    formData.append("PartOfMealName", mealName);
+    formData.append("MealType", props.choise);
+    let token = cookies.jwt;
+    // outLetProps.toggleState(true);
+    clientContext
+      .post<Result<AutoCompleteResponse[]>>(
+        "api/Meals/AutoCompleteMealName",
+        token,
+        formData,
+        "multipart/form-data"
+      )
+      .then((response) => {
+        // outLetProps.toggleState(false);
+        // Swal.fire({
+        //   title: "صح",
+        //   text: response.data.value.length.toString(),
+        //   icon: "success",
+        //   confirmButtonText: "حسناً",
+        // });
+        setAutoComplete(response.data.value);
+        console.log("response");
+        console.log(response);
+      })
+      .catch((err) => {
+        // outLetProps.toggleState(false);
+        console.log(err);
+        //   Swal.fire({
+        //     title: "صح",
+        //     text: err.status,
+        //     icon: "error",
+        //     confirmButtonText: "حسناً",
+        //   });
+      });
+    // }
+  }
+
+  return (
+    <>
+      {/* <div className="container d-flex justify-content-center mt-5">
+        {props.choise}
+        {props.atDay}
+      </div> */}
+      {selectedMeal?.mealName}
+      <div className="container">
+        <div className="d-flex justify-content-center mt-5">
+          <div className="scale-sider"></div>
+          {/* onSubmit={handleSubmit} */}
+          <form className="edit-pricing-form">
+            <div className="create-meal-label">
+              إضافة
+              {mealTypes?.types.map(
+                (mealType: MealType) =>
+                  props.choise == mealType.id && " " + mealType.value
+              )}
+            </div>
+
+            <div className="input-container-on-meal-form position-relative">
+              <input
+                className="create-meal-input"
+                type="text"
+                placeholder="اسم الوجبة"
+                dir="rtl"
+                onChange={handleMealNameChange}
+                value={mealName}
+              />
+              {autoComplete && autoComplete.length != 0 && (
+                <div className="auto-complete">
+                  {autoComplete.map((stuff) => (
+                    <div
+                      className="auto-complete-prepare-meal-item mt-1 mb-1"
+                      key={stuff.mealId}
+                      onClick={() =>
+                        selectMeal({
+                          mealId: stuff.mealId,
+                          mealName: stuff.mealName,
+                        })
+                      }
+                    >
+                      {stuff.mealName}
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            <div className="input-container-on-meal-form">
+              <input
+                className="create-meal-input"
+                type="number"
+                placeholder="عدد الوجبات المحضرة"
+                dir="rtl"
+                onChange={handleNumberOfMealsChange}
+              />
+            </div>
+            <button type="submit" className="submit-create-meal">
+              <p> تحضير</p>
+            </button>
+          </form>
+        </div>
+      </div>
+    </>
+  );
+}
+
+// <div className="input-container-on-meal-form">
+//   <select
+//     value={""}
+//     className="form-select select-meal-type"
+//     aria-label="Default select example"
+//     dir="rtl"
+//   >
+//     {autoComplete.map((stuff) => (
+//       <option value={stuff.mealId}>{stuff.mealName}</option>
+//     ))}
+//   </select>
+// </div>

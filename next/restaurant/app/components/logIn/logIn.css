@@ -1,0 +1,184 @@
+.log-in-label {
+    color: #000;
+    text-align: center;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 10px;
+    margin-top: 60px;
+}
+
+.user-name {
+    width: 299px;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    padding-right: 40px;
+    padding-left: 10px;
+    border: 1px solid #BDBDBD;
+}
+
+
+.log-in-form {
+    width: 530px;
+    height: 421px;
+    flex-shrink: 0;
+    border-radius: 8px 0px 0px 8px;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    transition: all 0.5s;
+}
+
+
+.user-name::placeholder {
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    float: right;
+    z-index: -50 !important;
+    margin-bottom: 3px;
+}
+
+.user-name-container {
+    position: relative;
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+.margin-consume1 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.margin-consume2 {
+    margin-top: 1px;
+    margin-bottom: 35px;
+}
+
+.user-name-svg {
+    position: absolute;
+    display: inline;
+    right: 6%;
+    bottom: 24%;
+}
+
+.remember-me p {
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 10px;
+    line-height: normal;
+}
+
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+
+.remember-check-box {
+    display: none;
+}
+
+
+
+
+
+.remember-label {
+    cursor: pointer;
+    flex-shrink: 0;
+    position: absolute;
+    right: 0%;
+    bottom: 21%;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: all 0.5s;
+}
+
+.remember-me {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-right: 21px;
+}
+
+.remember-me p {
+    margin-right: 25px;
+}
+
+
+.forget-password p {
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.submit-log-in {
+    display: flex;
+    width: 300px;
+    height: 45px;
+    padding: 4px 20px;
+    justify-content: center;
+    flex-shrink: 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    background: #E4801E;
+    box-shadow: -2px 2px 3px 0px rgba(0, 0, 0, 0.10);
+}
+
+.submit-log-in:focus {
+    outline: white;
+}
+
+.submit-log-in p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    width: 120px;
+    height: 35px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    user-select: none;
+}
+
+
+
+#remember:checked~.remember-label img {
+    content: url('./../../assets/rememberOk.svg');
+}
+
+input::placeholder {
+    transition: all 0.3s;
+}
+
+input:focus::placeholder {
+    font-size: 0px;
+}
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

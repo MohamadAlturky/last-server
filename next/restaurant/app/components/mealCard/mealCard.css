@@ -1,0 +1,161 @@
+.meal-card {
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.15);
+    width: 313px;
+    height: 397px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+}
+
+@media screen and (max-width: 700px) {
+    .meal-card {
+        transform: scale(85%);
+    }
+}
+
+.meal-image {
+    width: 254px;
+    height: 256px;
+    flex-shrink: 0;
+    border-radius: 5px;
+}
+
+.meal-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.meal-name {
+    border-radius: 5px;
+    background: #EBEBEB;
+    width: 254px;
+    height: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.meal-info {
+    width: 254px;
+    height: 35px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.meal-price {
+    width: 152px;
+    color: #E4801E;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.meal-quantity-label {
+    width: 132px;
+    color: #E4801E;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.font-30 {
+    font-size: 30px;
+    transform: translateY(-12px);
+}
+
+.meal-plus-minus {
+    display: flex;
+    color: white;
+    /* height: 20px;
+    width: 20px; */
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    border-radius: 5px;
+    background-color: rgb(42, 108, 165);
+    justify-content: center;
+    margin-left: 3px;
+    margin-right: 3px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.meal-plus-minus-cancel {
+    display: flex;
+    color: white;
+    /* height: 20px;
+    width: 20px; */
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    border-radius: 5px;
+    background-color: #E4801E;
+    justify-content: center;
+    margin-left: 3px;
+    margin-right: 3px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.annotation {
+    /* width: 117px; */
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    flex-shrink: 0;
+    position: absolute;
+    top: 70px;
+    right: 29.5px;
+}
+
+.orange-background {
+    background: #E4801E;
+}
+
+
+.blue-background {
+    background: #1C8ADA;
+}
+
+.yallow-background {
+    background: #DABC1C;
+}
+
+.red-background {
+    background: #DA1C24;
+}
+
+.brown-background {
+    background: rgb(42, 108, 165);
+}
+
+
+.header-for-card {
+    position: absolute;
+    width: 90px;
+    color: #000;
+    text-align: center;
+    font-family: Janna LT;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    top: -45px
+}

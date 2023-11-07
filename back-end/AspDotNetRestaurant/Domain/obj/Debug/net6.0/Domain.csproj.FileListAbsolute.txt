@@ -1,0 +1,15 @@
+/home/ubuntu/server-work-space/back-end/AspDotNetRestaurant/Domain/bin/Debug/net6.0/Domain.deps.json
+/home/ubuntu/server-work-space/back-end/AspDotNetRestaurant/Domain/bin/Debug/net6.0/Domain.dll
+/home/ubuntu/server-work-space/back-end/AspDotNetRestaurant/Domain/bin/Debug/net6.0/Domain.pdb
+/home/ubuntu/server-work-space/back-end/AspDotNetRestaurant/Domain/bin/Debug/net6.0/SharedKernal.dll
+/home/ubuntu/server-work-space/back-end/AspDotNetRestaurant/Domain/bin/Debug/net6.0/SharedKernal.pdb
+/home/ubuntu/server-work-space/back-end/AspDotNetRestaurant/Domain/obj/Debug/net6.0/Domain.csproj.AssemblyReference.cache
+/home/ubuntu/server-work-space/back-end/AspDotNetRestaurant/Domain/obj/Debug/net6.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/ubuntu/server-work-space/back-end/AspDotNetRestaurant/Domain/obj/Debug/net6.0/Domain.AssemblyInfoInputs.cache
+/home/ubuntu/server-work-space/back-end/AspDotNetRestaurant/Domain/obj/Debug/net6.0/Domain.AssemblyInfo.cs
+/home/ubuntu/server-work-space/back-end/AspDotNetRestaurant/Domain/obj/Debug/net6.0/Domain.csproj.CoreCompileInputs.cache
+/home/ubuntu/server-work-space/back-end/AspDotNetRestaurant/Domain/obj/Debug/net6.0/Domain.csproj.CopyComplete
+/home/ubuntu/server-work-space/back-end/AspDotNetRestaurant/Domain/obj/Debug/net6.0/Domain.dll
+/home/ubuntu/server-work-space/back-end/AspDotNetRestaurant/Domain/obj/Debug/net6.0/refint/Domain.dll
+/home/ubuntu/server-work-space/back-end/AspDotNetRestaurant/Domain/obj/Debug/net6.0/Domain.pdb
+/home/ubuntu/server-work-space/back-end/AspDotNetRestaurant/Domain/obj/Debug/net6.0/ref/Domain.dll

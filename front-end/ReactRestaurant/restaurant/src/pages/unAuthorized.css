@@ -1,0 +1,12 @@
+.un-authrized {
+    height: 600px;
+}
+
+.bolder-text {
+    font-weight: bolder;
+}
+
+.return-back {
+    text-decoration: underline;
+    cursor: pointer;
+}
