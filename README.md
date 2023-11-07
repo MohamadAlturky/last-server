@@ -3,13 +3,13 @@
 there are three projects
 
 
-##backend
+## backend
 Dockerized project with postgresql database
 
-##frontend
+## frontend
 react project 
 to install the dependencies
 run npm install 
 
-##next
+## next
 yet this project dont work
